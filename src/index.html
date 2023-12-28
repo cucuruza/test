@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+<section class="main">
+	<div class="space"></div>
+	<div class="cloud"></div>
+	<div class="container">
+		<header class="header">
+			<img class="logo" src="img/logo.svg" alt="logo">
+			<nav class="menu">
+				<ul>
+					<li><a class="menu__item" href="#">О марсе</a></li>
+					<li><a class="menu__item" href="#">Процесс</a></li>
+					<li><a class="menu__item" href="#">Билеты</a></li>
+					<li><a class="menu__item" href="#">Новости</a></li>
+					<li><a class="menu__item" href="#">Контакты</a></li>
+					<li><a id="buttonOpenPopUp" class="button" href="javascript:;">Купить билеты</a></li>
+				</ul>
+			</nav>
+			<div class="menu-mobile">
+			</div>
+		</header>
+
+		<div class="video">
+			<div class="ellipse-top">
+			</div>
+			<div class="line">
+			</div>
+			<div class="ellipse-bottom">
+			</div>
+			<h3 class="h3">Точка назначения:</h3>
+			<div class="video__mask">
+				<video class="clipped-video" autoplay loop muted src="video/mars.m4v">
+				</video>
+
+				<svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+					<clipPath id='clip'>
+						<path d="M221.124 6.3215H330.558V507H256.171V147.942L201.812 507H127.425L68.7745 152.949V507H0.109985V6.3215H109.544L167.48 361.803L221.124 6.3215Z"/>
+						<path d="M552.298 507L538.708 416.163H442.149L428.559 507H356.318L436.427 6.3215H551.583L631.691 507H552.298ZM527.979 348.213L490.071 95.0131L452.162 348.213H527.979Z"/>
+						<path d="M773.474 6.3215C812.574 6.3215 841.9 16.8119 861.45 37.7927C881 58.7735 890.776 89.5295 890.776 130.061V195.149C890.776 235.68 881 266.436 861.45 287.417C841.9 308.397 812.574 318.888 773.474 318.888H736.281V507H657.602V6.3215H773.474ZM736.281 247.362H773.474C786.348 247.362 795.885 243.786 802.084 236.634C808.76 229.481 812.098 217.322 812.098 200.156V125.054C812.098 107.888 808.76 95.7284 802.084 88.5758C795.885 81.4233 786.348 77.847 773.474 77.847H736.281V247.362Z"/>
+						<path d="M1144.66 386.837C1144.66 427.368 1134.64 458.601 1114.62 480.536C1094.59 501.993 1065.5 512.722 1027.36 512.722C989.209 512.722 960.122 501.993 940.095 480.536C920.067 458.601 910.054 427.368 910.054 386.837V126.484C910.054 85.9532 920.067 54.9588 940.095 33.5012C960.122 11.5667 989.209 0.599487 1027.36 0.599487C1065.5 0.599487 1094.59 11.5667 1114.62 33.5012C1134.64 54.9588 1144.66 85.9532 1144.66 126.484V175.122H1070.27V121.478C1070.27 88.5758 1056.68 72.1249 1029.5 72.1249C1002.32 72.1249 988.732 88.5758 988.732 121.478V391.844C988.732 424.269 1002.32 440.481 1029.5 440.481C1056.68 440.481 1070.27 424.269 1070.27 391.844V320.318H1144.66V386.837Z"/>
+					</clipPath>
+				</defs> 
+				</svg>
+					
+				<svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<clipPath id='clip-responsive' clipPathUnits="objectBoundingBox">
+							<path d="M0.193,0.012 H0.289 V0.99 H0.224 V0.289 L0.176,0.99 H0.111 L0.06,0.299 V0.99 H0 V0.012 H0.096 L0.146,0.706 L0.193,0.012 M0.483,0.99 L0.471,0.813 H0.386 L0.374,0.99 H0.311 L0.381,0.012 H0.482 L0.552,0.99 H0.483 M0.461,0.68 L0.428,0.186 L0.395,0.68 H0.461 M0.676,0.012 C0.71,0.012,0.736,0.033,0.753,0.074 C0.77,0.115,0.778,0.175,0.778,0.254 V0.381 C0.778,0.46,0.77,0.52,0.753,0.561 C0.736,0.602,0.71,0.623,0.676,0.623 H0.643 V0.99 H0.575 V0.012 H0.676 M0.643,0.483 H0.676 C0.687,0.483,0.695,0.476,0.701,0.462 C0.707,0.448,0.71,0.424,0.71,0.391 V0.244 C0.71,0.211,0.707,0.187,0.701,0.173 C0.695,0.159,0.687,0.152,0.676,0.152 H0.643 V0.483 M1,0.755 C1,0.835,0.991,0.895,0.974,0.938 C0.956,0.98,0.931,1,0.898,1 C0.864,1,0.839,0.98,0.821,0.938 C0.804,0.895,0.795,0.835,0.795,0.755 V0.247 C0.795,0.168,0.804,0.107,0.821,0.065 C0.839,0.023,0.864,0.001,0.898,0.001 C0.931,0.001,0.956,0.023,0.974,0.065 C0.991,0.107,1,0.168,1,0.247 V0.342 H0.935 V0.237 C0.935,0.173,0.923,0.141,0.899,0.141 C0.876,0.141,0.864,0.173,0.864,0.237 V0.765 C0.864,0.828,0.876,0.86,0.899,0.86 C0.923,0.86,0.935,0.828,0.935,0.765 V0.625 H1 V0.755"/>
+						</clipPath>
+					</defs>
+				</svg>
+			
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<div class="pop-up hide">
+	<div class="container">
+		<div class="pop-up__head">
+				<h2 class="h2">
+					Бронирование билетов
+				</h2>
+				<div class="close">
+				</div>
+		</div>
+
+		<div class="pop-up__body">
+			<form action="#" class="form">
+					<div class="form__input">
+						<label for="date-start">
+							Дата заезда
+						</label>
+						<input id="date-start" type="text" name="date-start" placeholder="13.05.2022">
+					</div>
+					<div class="form__input">
+						<label for="date-end">
+							Дата выезда
+						</label>
+						<input id="date-end" type="text" name="date-end" placeholder="13.05.2022">
+					</div>
+					<div class="form__input">
+						<label for="count">
+							Количество
+						</label>
+						<input id="count" type="text" name="count" placeholder="1 человек">
+					</div>
+				<button class="button button_pop-up" type="submit">Купить билеты</button>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
